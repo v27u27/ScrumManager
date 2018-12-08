@@ -1,0 +1,358 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            tools:text=" Project Name" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tvPokemonStatsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Stats of Tasks"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/llStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPokemonStatsLabel"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAttackLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Total"
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#FF8A65" />
+
+                <TextView
+                    android:id="@+id/tvTotalValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDefenseLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Completed"
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressCompleted"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#9575CD" />
+
+                <TextView
+                    android:id="@+id/tvCompletedValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSpeedLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Pending"
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressPending"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#FFD54F" />
+
+                <TextView
+                    android:id="@+id/tvPendingValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHPLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Urgent and Imp."
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressUrgImp"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#9dd8ff" />
+
+                <TextView
+                    android:id="@+id/tvUrgImpValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvXPLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Urgent"
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressUrgent"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#97ed94" />
+
+                <TextView
+                    android:id="@+id/tvUrgentValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvXPLabel1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Important"
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressImp"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#ffcda7" />
+
+                <TextView
+                    android:id="@+id/tvImpValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvXPLabel3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Default"
+                    android:textColor="#000000" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressDeafult"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="4"
+                    app:rcBackgroundColor="#F0F0F0"
+                    app:rcMax="20"
+                    app:rcProgressColor="#f4f282" />
+
+                <TextView
+                    android:id="@+id/tvDefaultValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMovesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llStats"
+            android:layout_margin="8dp"
+            android:text="Team Members"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/vinayak"
+            app:civ_border_color="#4251B1"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#d3d3d3"/>
+
+        <TextView
+            android:layout_marginStart="48dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Vinayak Kumar"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/daksh"
+            app:civ_border_color="#4251B1"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#d3d3d3"/>
+
+
+        <TextView
+            android:layout_marginStart="48dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Daksh Sharma"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

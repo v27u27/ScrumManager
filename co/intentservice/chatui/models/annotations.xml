@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='co.intentservice.chatui.models.ChatMessage ChatMessage(java.lang.String, long, co.intentservice.chatui.models.ChatMessage.Type, java.lang.String)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

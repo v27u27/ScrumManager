@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1025406484259",
+    "firebase_url": "https://scrumup-de132.firebaseio.com",
+    "project_id": "scrumup-de132",
+    "storage_bucket": "scrumup-de132.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025406484259:android:b16ffed05302c043",
+        "android_client_info": {
+          "package_name": "xyz.vinayak.scrumup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025406484259-tfl1ncig2hcoannnhoikqln8hucgatt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.vinayak.scrumup",
+            "certificate_hash": "c62f118236b0350922b333a2ce3df7d72fe96ff9"
+          }
+        },
+        {
+          "client_id": "1025406484259-h0f2gnbkaalpgc9uh2ekqrnkktp9799l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlyUCUD76ZuByfkB7Q4fu_H0YkMnxrjDM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025406484259-h0f2gnbkaalpgc9uh2ekqrnkktp9799l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
